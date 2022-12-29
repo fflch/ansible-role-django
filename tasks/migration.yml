@@ -1,0 +1,4 @@
+- name: manage.py migrate
+  shell: "{{ django_dest }}/venv/bin/python{{ django_pythonversion }} manage.py migrate"
+  args:
+    chdir: "{{ django_dest }}"

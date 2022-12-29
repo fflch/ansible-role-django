@@ -1,0 +1,13 @@
+[Unit]
+Description={{ django_name }}
+After=network.target
+
+[Service]
+WorkingDirectory={{ django_dest }}
+ExecStart={{ django_dest }}/venv/bin/python{{ django_pythonversion }} {{ django_dest }}/venv/bin/gunicorn --error-logfile "-" --enable-stdio-inheritance --reload --log-level "debug" --timeout 6000 --bind 0.0.0.0:{{ django_port }} -w 4 core.wsgi
+ExecStop=/bin/kill -INT $MAINPID
+ExecReload=/bin/kill -TERM $MAINPID
+Restart=always
+
+[Install]
+WantedBy=default.target

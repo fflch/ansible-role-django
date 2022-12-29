@@ -1,0 +1,5 @@
+- name: Create virtualenv and run pip install -r requirement.txt
+  pip:
+    virtualenv: "{{ django_dest }}/venv"
+    requirements: "{{ django_dest }}/requirements.txt"
+    virtualenv_command: "/srv/python{{ django_pythonversion }}/bin/python{{ django_pythonversion }} -m venv"

@@ -1,0 +1,7 @@
+- name: Clone django project repository
+  git:
+    repo: "{{ django_repo }}"
+    dest: "{{ django_dest }}"
+    version: "{{ django_version }}"
+    force: yes
+    update: yes
