@@ -5,3 +5,8 @@
     mode: 0600
   notify:
     enable django service
+    
+# Conferir:
+# systemctl enable macc.service
+# systemctl start macc.service
+# systemctl status macc.service
