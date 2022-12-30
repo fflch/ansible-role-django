@@ -6,6 +6,7 @@ django_version: "1.0.0"
 django_port: "8001"
 django_envfile: '.env-example'
 django_pythonversion: '3.9'
+django_wsgi: core
 
 # Env variables
 django_env:   
