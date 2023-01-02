@@ -2,3 +2,4 @@
   shell: "{{ django_dest }}/venv/bin/python{{ django_pythonversion }} manage.py collectstatic --skip-checks -c --noinput"
   args:
     chdir: "{{ django_dest }}"
+  when: django_collectstatic
