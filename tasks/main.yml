@@ -4,6 +4,7 @@
 - import_tasks: env.yml
 - import_tasks: migration.yml
 - import_tasks: service.yml
+- import_tasks: collectstatic.yml
 
   
 
