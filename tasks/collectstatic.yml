@@ -3,3 +3,5 @@
   args:
     chdir: "{{ django_dest }}"
   when: django_collectstatic
+  notify:
+    enable django service
