@@ -8,6 +8,7 @@ django_envfile: '.env-example'
 django_pythonversion: '3.9'
 django_wsgi: core
 django_collectstatic: False
+django_assets: False
 
 # Env variables
 django_env:   

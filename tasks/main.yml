@@ -6,5 +6,8 @@
 - import_tasks: service.yml
 - import_tasks: collectstatic.yml
 
+- import_tasks: assets.yml
+  when: django_assets
+
   
 

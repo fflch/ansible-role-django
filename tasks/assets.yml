@@ -1,0 +1,10 @@
+---
+- name: npm install
+  shell: "npm install"
+  args:
+    chdir: "{{ django_dest }}"
+
+- name: npm run
+  shell: "npm run build --silent"
+  args:
+    chdir: "{{ django_dest }}"
